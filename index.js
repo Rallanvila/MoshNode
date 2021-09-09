@@ -43,6 +43,16 @@ app.post("/api/courses", (req, res) => {
 	courses.push(course);
 	res.send(course);
 });
+
+app.put("api/courses/:id", (res, res) => {
+	//look up the course
+	//if not exisiting return 404
+	//Validate
+	//if invalid, return 400 - bad reqeust
+	//UPdate course
+	//Return the updated course
+});
+
 //PORT Environment Variable
 const port = process.env.PORT || 3000;
 app.listen(port, () => console.log(`listening on port ${port}...`));
